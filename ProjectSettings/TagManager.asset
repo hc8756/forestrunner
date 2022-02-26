@@ -6,6 +6,8 @@ TagManager:
   tags:
   - obstacle
   - ground
+  - Manager
+  - scoreText
   layers:
   - Default
   - TransparentFX
