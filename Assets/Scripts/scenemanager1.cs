@@ -14,12 +14,14 @@ public class scenemanager1 : MonoBehaviour
     {
         managerObject=GameObject.FindWithTag("Manager");
         scores = managerObject.GetComponent<Manager>().scores;
+        //display last score on list
         score.text = scores[scores.Count - 1].ToString();
     }
 
     // Update is called once per frame
     void Update()
     {
+        //save player name to names list
         if (Input.GetKeyDown(KeyCode.Return)) {
             if (nameInput.text == "") { managerObject.GetComponent<Manager>().names.Add("???"); }
             else { managerObject.GetComponent<Manager>().names.Add(nameInput.text); }

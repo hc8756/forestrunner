@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour
-{
-    //speed forward and speed side to side 
-    Rigidbody rb;
-    GameObject firstChild;
-    Animator anim;
+{   
     public GameObject managerObject;
+    Rigidbody rb;
+    //the actual model
+    GameObject firstChild;
+    //animator of the model
+    Animator anim;
+    //speed forward and speed side to side
     public float speedF = 5;
     public float speedS = 4;
     public Vector3 jump;
@@ -19,10 +21,10 @@ public class Player : MonoBehaviour
     {
         managerObject = GameObject.FindWithTag("Manager");
         Physics.gravity = new Vector3(0, -30.0F, 0);
-        firstChild = this.gameObject.transform.GetChild(0).gameObject;
-        anim = firstChild.GetComponent<Animator>();
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        firstChild = this.gameObject.transform.GetChild(0).gameObject;
+        anim = firstChild.GetComponent<Animator>();
         jump = new Vector3(0.0f, 13.0f, 1.0f);
     }
 
@@ -32,9 +34,7 @@ public class Player : MonoBehaviour
         {
             isGrounded = true;
             anim.SetBool("Jumping", false);
-            
         }
-        
     }
 
     void OnCollisionEnter(Collision collision)
@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameover) {speedF = speedF + 0.0003f; }
+        if (!gameover) {speedF = speedF + Time.deltaTime*0.05f; }
         
         transform.Translate(Vector3.forward * Time.deltaTime * speedF, Space.World);
         if (Input.GetKey(KeyCode.A) && this.gameObject.transform.position.x>Manager.leftBound && isGrounded) {
