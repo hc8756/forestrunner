@@ -56,20 +56,22 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameover) {speedF = speedF + Time.deltaTime*0.1f;}
+        if (!gameover) {
+            speedF = speedF + Time.deltaTime*0.1f;
         
-        transform.Translate(Vector3.forward * Time.deltaTime * speedF, Space.World);
-        if (Input.GetKey(KeyCode.A) && this.gameObject.transform.position.x>Manager.leftBound && isGrounded) {
-            transform.Translate(Vector3.left * Time.deltaTime * speedS, Space.World);
-        }
-        if (Input.GetKey(KeyCode.D) && this.gameObject.transform.position.x < Manager.rightBound && isGrounded)
-        {
-            transform.Translate(Vector3.right * Time.deltaTime * speedS, Space.World);
-        }
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            isGrounded = false;
-            if (transform.position.y <= 1.26f) {rb.AddForce(jump, ForceMode.Impulse);anim.SetBool("Jumping", true);  }   
+            transform.Translate(Vector3.forward * Time.deltaTime * speedF, Space.World);
+            if (Input.GetKey(KeyCode.A) && this.gameObject.transform.position.x>Manager.leftBound && isGrounded) {
+                transform.Translate(Vector3.left * Time.deltaTime * speedS, Space.World);
+            }
+            if (Input.GetKey(KeyCode.D) && this.gameObject.transform.position.x < Manager.rightBound && isGrounded)
+            {
+                transform.Translate(Vector3.right * Time.deltaTime * speedS, Space.World);
+            }
+            if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+            {
+                isGrounded = false;
+                if (transform.position.y <= 1.26f) {rb.AddForce(jump, ForceMode.Impulse);anim.SetBool("Jumping", true);  }   
+            }
         }
     }
 }
