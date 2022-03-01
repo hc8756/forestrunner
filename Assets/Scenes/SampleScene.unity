@@ -1475,6 +1475,7 @@ GameObject:
   - component: {fileID: 283873103}
   - component: {fileID: 283873102}
   - component: {fileID: 283873101}
+  - component: {fileID: 283873104}
   m_Layer: 0
   m_Name: TreeRounds
   m_TagString: obstacle
@@ -1559,6 +1560,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 283873099}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &283873104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 283873099}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1 &300646740
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,7 +1838,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ba52853a69186a841a52a9cc2e9b77fa, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ba52853a69186a841a52a9cc2e9b77fa, type: 3}
       propertyPath: m_LocalScale.x
@@ -2206,6 +2220,7 @@ GameObject:
   - component: {fileID: 476970377}
   - component: {fileID: 476970376}
   - component: {fileID: 476970375}
+  - component: {fileID: 476970378}
   m_Layer: 0
   m_Name: TreeRounds
   m_TagString: obstacle
@@ -2290,6 +2305,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 476970373}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &476970378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 476970373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!4 &493427539 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: e9089b1db16b58f4282a94e020b9c0e8, type: 3}
@@ -2386,7 +2414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57d3eed6d2253d24994d5ad37e00aedc, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57d3eed6d2253d24994d5ad37e00aedc, type: 3}
       propertyPath: m_LocalScale.x
@@ -3090,6 +3118,7 @@ Transform:
   m_Children:
   - {fileID: 705111361}
   - {fileID: 476970374}
+  - {fileID: 1188604777}
   - {fileID: 1481219506}
   - {fileID: 1330493677}
   - {fileID: 366386123}
@@ -3098,7 +3127,6 @@ Transform:
   - {fileID: 1835964646}
   - {fileID: 526159097}
   - {fileID: 1624935703}
-  - {fileID: 1188604777}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5139,6 +5167,7 @@ GameObject:
   - component: {fileID: 1103634585}
   - component: {fileID: 1103634584}
   - component: {fileID: 1103634583}
+  - component: {fileID: 1103634586}
   m_Layer: 0
   m_Name: Rock (1)
   m_TagString: obstacle
@@ -5223,6 +5252,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1103634581}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1103634586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103634581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1001 &1124524698
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5471,7 +5513,7 @@ Transform:
   m_Children:
   - {fileID: 585550307}
   m_Father: {fileID: 652896504}
-  m_RootOrder: 10
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1188604778
 BoxCollider:
@@ -5771,6 +5813,7 @@ GameObject:
   - component: {fileID: 1234082691}
   - component: {fileID: 1234082690}
   - component: {fileID: 1234082689}
+  - component: {fileID: 1234082692}
   m_Layer: 0
   m_Name: Stump
   m_TagString: obstacle
@@ -5855,6 +5898,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1234082687}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1234082692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234082687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1001 &1237575401
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6102,6 +6158,7 @@ GameObject:
   - component: {fileID: 1273327457}
   - component: {fileID: 1273327456}
   - component: {fileID: 1273327455}
+  - component: {fileID: 1273327459}
   m_Layer: 0
   m_Name: Tree
   m_TagString: obstacle
@@ -6186,6 +6243,19 @@ Transform:
   m_Father: {fileID: 712401080}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1273327459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1273327454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1001 &1330493676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6199,7 +6269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 638dc165572d2a84081d13ce1afb4d52, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 638dc165572d2a84081d13ce1afb4d52, type: 3}
       propertyPath: m_LocalScale.x
@@ -6730,6 +6800,7 @@ GameObject:
   - component: {fileID: 1481219509}
   - component: {fileID: 1481219508}
   - component: {fileID: 1481219507}
+  - component: {fileID: 1481219510}
   m_Layer: 0
   m_Name: Tree (3)
   m_TagString: obstacle
@@ -6750,7 +6821,7 @@ Transform:
   m_Children:
   - {fileID: 327253880}
   m_Father: {fileID: 652896504}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &1481219507
 BoxCollider:
@@ -6814,6 +6885,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1481219505}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1481219510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481219505}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1001 &1481668239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7125,6 +7209,7 @@ GameObject:
   - component: {fileID: 1563864110}
   - component: {fileID: 1563864109}
   - component: {fileID: 1563864108}
+  - component: {fileID: 1563864112}
   m_Layer: 0
   m_Name: Stump (1)
   m_TagString: obstacle
@@ -7209,6 +7294,19 @@ Transform:
   m_Father: {fileID: 86517837}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1563864112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1563864107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1001 &1564585537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7465,7 +7563,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 638dc165572d2a84081d13ce1afb4d52, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 638dc165572d2a84081d13ce1afb4d52, type: 3}
       propertyPath: m_LocalScale.x
@@ -7617,7 +7715,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57d3eed6d2253d24994d5ad37e00aedc, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 57d3eed6d2253d24994d5ad37e00aedc, type: 3}
       propertyPath: m_LocalScale.x
@@ -8382,7 +8480,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ba52853a69186a841a52a9cc2e9b77fa, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ba52853a69186a841a52a9cc2e9b77fa, type: 3}
       propertyPath: m_LocalScale.x
@@ -8538,7 +8636,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ba52853a69186a841a52a9cc2e9b77fa, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: ba52853a69186a841a52a9cc2e9b77fa, type: 3}
       propertyPath: m_LocalScale.x
@@ -8615,6 +8713,7 @@ GameObject:
   - component: {fileID: 1842119163}
   - component: {fileID: 1842119162}
   - component: {fileID: 1842119161}
+  - component: {fileID: 1842119164}
   m_Layer: 0
   m_Name: TreeRounds (1)
   m_TagString: obstacle
@@ -8699,6 +8798,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1842119159}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1842119164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842119159}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!4 &1858961581 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 57d3eed6d2253d24994d5ad37e00aedc, type: 3}
@@ -9549,6 +9661,7 @@ GameObject:
   - component: {fileID: 2094207433}
   - component: {fileID: 2094207432}
   - component: {fileID: 2094207431}
+  - component: {fileID: 2094207434}
   m_Layer: 0
   m_Name: Log (2)
   m_TagString: obstacle
@@ -9633,6 +9746,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2094207429}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2094207434
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2094207429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0724badfab7bffe47a317ef3ee7a39e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  managerObject: {fileID: 0}
 --- !u!1001 &2096312579
 PrefabInstance:
   m_ObjectHideFlags: 0

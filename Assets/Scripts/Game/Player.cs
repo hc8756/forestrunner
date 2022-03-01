@@ -56,7 +56,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!gameover) {speedF = speedF + Time.deltaTime*0.05f; }
+        if (!gameover) {speedF = speedF + Time.deltaTime*0.1f;}
         
         transform.Translate(Vector3.forward * Time.deltaTime * speedF, Space.World);
         if (Input.GetKey(KeyCode.A) && this.gameObject.transform.position.x>Manager.leftBound && isGrounded) {
